@@ -1,0 +1,491 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "HG丸ｺﾞｼｯｸM-PRO", "Hiragino Maru Gothic ProN", "Meiryo", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.site-header {
+    background-color: #076807; /* 濃い緑の背景 */
+    padding: 20px;
+    border-bottom: none;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    flex: 1 1 300px;
+}
+
+.header-logo .ruby {
+    font-size: 10pt;
+    color: #fbfdcd;
+    display: block;
+}
+
+.header-logo h1 {
+    font-size: 24pt;
+    color: #fbfdcd;
+    margin: 5px 0;
+}
+
+.header-info {
+    flex: 1 1 300px;
+    text-align: right;
+    font-size: 14pt;
+    color: #ffff99;
+}
+
+.header-info a {
+    color: #ffff99;
+}
+
+.header-info .contact-msg {
+    color: #ccffff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navigation */
+.site-nav {
+    background-color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #222;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.site-nav ul {
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.site-nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.site-nav a {
+    display: block;
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 11pt;
+    transition: background-color 0.3s;
+}
+
+.site-nav a:hover, .site-nav a.active {
+    background-color: #555;
+}
+
+/* Hero Slider */
+.hero-slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.hero-slider img {
+    flex: 1 1 calc(50% - 10px);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-block {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    background-color: #076807;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18pt;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 0 0 4px #076807;
+    border: 1px dashed #fff;
+}
+
+.section-title span {
+    font-size: 10pt;
+}
+
+.section-title.bg-lightgreen {
+    background-color: #A5C32D;
+    box-shadow: 0 0 0 4px #A5C32D;
+}
+
+.text-content p {
+    font-size: 14pt;
+    margin-bottom: 15px;
+}
+
+.highlight-text {
+    font-size: 16pt;
+    background-color: #ffff99;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.highlight-bg {
+    background-color: #ccffff;
+    padding: 5px;
+    display: inline-block;
+}
+
+.highlight-bg-green {
+    background-color: #ccffcc;
+    padding: 5px;
+    font-size: 18pt;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.underline {
+    font-weight: bold;
+}
+
+/* Images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+.responsive-img-small {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Link Box */
+.link-box {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-left: 5px solid #0000ff;
+}
+
+/* Presentation Box */
+.presentation-box {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Contact Info Block */
+.contact-info-block {
+    color: #0000ff;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Access / Map */
+.access-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.access-info {
+    flex: 1 1 300px;
+    color: #0000ff;
+    font-size: 14pt;
+}
+
+.map-container {
+    flex: 1 1 400px;
+    width: 100%;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #eee;
+    padding: 40px 20px;
+    border-top: 5px solid #076807;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-left h2 {
+    color: #008000;
+    font-size: 18pt;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    color: #0000ff;
+    font-size: 14pt;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.contact-box {
+    background-color: #339900;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #339900;
+    text-align: center;
+}
+
+.contact-box p {
+    margin-bottom: 10px;
+}
+
+.contact-box .tel {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.contact-box a {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-info {
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    .site-nav li {
+        flex: 1 1 50%;
+        border-bottom: 1px solid #444;
+    }
+    
+    .hero-slider img {
+        flex: 1 1 100%;
+    }
+    
+    .access-block {
+        flex-direction: column;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer-right {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Page Specific Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.inline-img {
+    flex: 1 1 calc(33.333% - 10px);
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-block {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.product-info {
+    margin-top: 15px;
+    font-size: 14pt;
+}
+
+.cart-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-select {
+    padding: 8px 12px;
+    font-size: 12pt;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 8px 20px;
+    font-size: 12pt;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Company Profile Styles */
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14pt;
+}
+
+.company-table th, .company-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.company-table th {
+    background-color: #f9f9f9;
+    width: 30%;
+    font-weight: bold;
+}
+
+.example-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.example-box {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .site-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .site-nav ul.active {
+        display: flex;
+    }
+    
+    .site-nav li {
+        width: 100%;
+        border-top: 1px solid #444;
+    }
+    
+    .site-nav a {
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    .inline-img {
+        flex: 1 1 calc(50% - 10px);
+    }
+    
+    .company-table th, .company-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .company-table th {
+        background-color: #f0f0f0;
+        border-bottom: none;
+    }
+    
+    .example-box {
+        flex: 1 1 100%;
+    }
+}
