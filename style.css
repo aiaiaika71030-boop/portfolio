@@ -28,7 +28,8 @@ a:hover {
 
 /* Header */
 .site-header {
-    background-color: #076807; /* 濃い緑の背景 */
+    background-color: #076807;
+    /* 濃い緑の背景 */
     padding: 20px;
     border-bottom: none;
 }
@@ -114,7 +115,8 @@ a:hover {
     transition: background-color 0.3s;
 }
 
-.site-nav a:hover, .site-nav a.active {
+.site-nav a:hover,
+.site-nav a.active {
     background-color: #555;
 }
 
@@ -142,7 +144,7 @@ a:hover {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-block {
@@ -322,24 +324,24 @@ a:hover {
         text-align: left;
         margin-top: 15px;
     }
-    
+
     .site-nav li {
         flex: 1 1 50%;
         border-bottom: 1px solid #444;
     }
-    
+
     .hero-slider img {
         flex: 1 1 100%;
     }
-    
+
     .access-block {
         flex-direction: column;
     }
-    
+
     .footer-container {
         flex-direction: column;
     }
-    
+
     .footer-right {
         justify-content: center;
         margin-top: 20px;
@@ -419,7 +421,8 @@ a:hover {
     font-size: 14pt;
 }
 
-.company-table th, .company-table td {
+.company-table th,
+.company-table td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     text-align: left;
@@ -450,22 +453,22 @@ a:hover {
     .menu-toggle {
         display: block;
     }
-    
+
     .site-nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
     }
-    
+
     .site-nav ul.active {
         display: flex;
     }
-    
+
     .site-nav li {
         width: 100%;
         border-top: 1px solid #444;
     }
-    
+
     .site-nav a {
         padding: 15px 20px;
         text-align: left;
@@ -474,18 +477,37 @@ a:hover {
     .inline-img {
         flex: 1 1 calc(50% - 10px);
     }
-    
-    .company-table th, .company-table td {
+
+    .company-table th,
+    .company-table td {
         display: block;
         width: 100%;
     }
-    
+
     .company-table th {
         background-color: #f0f0f0;
         border-bottom: none;
     }
-    
+
     .example-box {
         flex: 1 1 100%;
     }
+}
+
+.menu-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.menu.open {
+    display: flex;
 }
